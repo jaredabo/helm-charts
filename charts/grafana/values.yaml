@@ -149,7 +149,7 @@ hostAliases: []
   #     - "my.host.com"
 
 ingress:
-  enabled: false
+  enabled: true
   # Values can be templated
   annotations: {}
     # kubernetes.io/ingress.class: nginx
@@ -157,7 +157,7 @@ ingress:
   labels: {}
   path: /
   hosts:
-    - chart-example.local
+    - iot-grafana.dv-eks.kube.research.corteva.com
   ## Extra paths to prepend to every host configuration. This is useful when working with annotation based services.
   extraPaths: []
   # - path: /*
